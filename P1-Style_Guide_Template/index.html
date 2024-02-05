@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<!-- Kristin Lee 301420820 -->
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet"> 
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#copmany_breakdown">Company Breakdown</a>
+        <a href="pages/product_listing.html">Product Listings</a>
+        <a href="pages/checkout.html">Checkout</a>
+        <a href="pages/payment.html">Payment</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.a</p>
+        
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://www.youtube.com/"&gt;YouTube&lt;/a&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <a href="https://www.youtube.com/">YouTube</a>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <p></p>
+
+        <h4>CSS selector:</h4>
+        <p>.button1, .button2</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+          <br> &lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <button class="button1" type="submit" value="Submit">Submit</button>
+          <button class="button2" type="reset" value="Reset">Reset</button>
+        </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.input [type=text]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="entertext"&gt;Enter Text:&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;input for="text" id="entertext" name="entertext"&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <label for="entertext">Enter Text:</label>
+        <input type="text" id="entertext" name="entertext" class="textinput" placeholder="Placeholder Text">
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.checklist</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label class="checklist"&gt;<br> 
+          &lt;input type="radio" id="red" name="bestcolor" value="Red"&gt;<br>
+          &lt;/label&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <label class="checklist">
+          <input type="radio" id="red" name="bestcolor" value="Red">
+          <label for="red">Red</label><br>
+          <input type="radio" id="blue" name="bestcolor" value="Blue">
+          <label for="blue">Blue</label><br>
+          <input type="radio" id="yellow" name="bestcolor" value="Yellow">
+          <label for="yellow">Yellow</label>
+        </label>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.a</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://twitter.com/weirdlilguys"&gt; &lt;img src="images/wacom tablet.jpg" style="width:300px;height:300px;"&gt; &lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="https://twitter.com/weirdlilguys"> <img src="images/wacom tablet.jpg" class="cat" style="width:300px;height:300px;"> </a>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.h1, .h2, .h3, .h4, .h5, .h6</p>
+
+        <h4>Sample code:</h4>
+        <code> &lt;h1&gt;Heading Type 1&lt;/h1&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Heading Type 1</h1>
+        <h2>Heading Type 2</h2>
+        <h3>Heading Type 3</h3>
+        <h4>Heading Type 4</h4>
+        <h5>Heading Type 5</h5>
+        <h6>Heading Type 6</h6>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Example of a paragraph element&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>This website gives you easy access and navigation to all things digital arts.</p>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.ul</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol type="1"&gt;
+          &lt;li&gt;Tablet Pen&lt;/li&gt;<br> 
+          &lt;li&gt;Drawing Tablets&lt;/li&gt;<br> 
+          &lt;li&gt;Screen Protector&lt;/li&gt;<br> 
+          &lt;/ol&gt;<br> 
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol type="1">
+          <li>Tablet Pen</li>
+          <li>Drawing Tablets</li>
+          <li>Screen Protector</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        .button-menu
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a class="button-menu" href="#"&gt;Tablets&lt;/a&gt;<br>
+          &lt;a class="button-menu" href="#"&gt;Accessories&lt;/a&gt;<br>
+          &lt;a class="button-menu" href="#"&gt;Display&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-menu" href="#">Tablets</a>
+        <a class="button-menu" href="#">Accessories</a>
+        <a class="button-menu" href="#">Display</a>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+    <!-- // COMPANY BREAKDOWN SECTION -->
+
+    <section class="element" id="copmany_breakdown">
+      <h2>Company Branding Ideas</h2>
+      <h3>What does my company do?</h3>
+      <p>My company supplies digital illustration products, tools, and accessories online.</p>
+
+      <h3>Who is my company to potential customers?</h3>
+      <p>My company appeals for people needing new tools or products because theirs is worn down or lost, or for people getting into this new hobby and wanting the right tools for the job.</p>
+      
+      <h3>Why might this company entice someone to purchase a product or service?</h3>
+      <p>My company offers a wide variety of products in one location in a quick and efficient way without needing to search all over. Getting products to their front door is fast and quick.</p>
+    
+      <h2>Company Brand Components</h2>
+      <img src="images/IAT 339 P01.png">
+    </section>
+
+    <!-- // COMPANY BREAKDOWN SECTION -->
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul></ul>
+        <li>Paperlike. 2024. <strong>Paper screen protector [Image]</strong>. Retrieved from <a href="https://paperlike.com/"></a>https://paperlike.com/</li>
+        <li>Park, Connie. Photographer. 2024. <strong>Huion Drawing Pen [Photograph]</strong>. Retrieved from <a href="https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/"></a>https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/</li>
+        <li>Park, Connie. Photographer. 2024. <strong>Huion Drawing Tablet [Photograph]</strong>. Retrieved from <a href="https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/"></a>https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/</li>
+        <li>Amazon. N.D. <strong>Huion Drawing Pen [Photograph]</strong>. Retrieved from <a href="https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1"></a>https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1</li>
+        <li>Simonson, Mark. Type Designer. 2009. <strong>Anonymous Pro [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Anonymous+Pro?query=anonymous+pro">https://fonts.google.com/specimen/Anonymous+Pro?query=anonymous+pro</a></li>
+        <li>Matteson, Steve. Designer. 2012. <strong>Cousine[Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Cousine/about?query=cousine">https://fonts.google.com/specimen/Cousine/about?query=cousine</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>

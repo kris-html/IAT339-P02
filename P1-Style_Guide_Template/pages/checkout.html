@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 Style Guide Template</title>
+
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>Checkout Cart</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="product_listing.html">Product Listings</a>
+      <a href="checkout.html">Checkout Cart</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
+
+  <section class="element">
+    <h4>CSS selector:</h4>
+    <p>.checkout_cart_container, .checkout_header, .checkout_total</p>
+
+    <h4>Sample code:</h4>
+    <code>
+          &lt;dive class="checlout_cart_container"&gt;<br>
+          &lt;div class="checkout_header"&gt;<br>
+          &lt;h3&gt;Checkout Cart&lt;/h3&gt;<br>
+          &lt;/div&gt;<br>
+
+          &lt;div class="checkout_inventory"&gt;<br>
+          &lt;h4&gt;Cart Inventory&lt;/h4&gt;<br>
+          &lt;p&gt;Drawing Glove&lt;b&gt;$12.00&lt;/b&gt;<br>
+          &lt;p&gt;Screen Protector&lt;b&gt;$20.00&lt;/b&gt;<br>
+          &lt;/div&gt;<br>
+
+          &lt;div class="checkout_total"&gt;<br>
+          &lt;p&gt;Total&lt;b&gt;$32.00&lt;/b&gt;<br>
+          &lt;button type="submit" value="Submit"&gt;Checkout&lt;/button&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+    <h4>Rendered element:</h4>
+    <div class="checkout_cart_container">
+      <div class="checkout_header">
+        <h2>Checkout Cart</h2>
+      </div>
+
+      <div class="checkout_inventory">
+        <p>Drawing Glove <b>$12.00</b></p>
+        <p>Screen Protector <b>$30.00</b></p>
+      </div>
+
+      <div class="checkout_total">
+        <p>Total:</p>
+        <p class="total_checkout_price">$42.00</p>
+        <a href="payment.html" value="submit" class="checkoutbutton"><button>Proceed to Payment</button> </a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  
+</body>
+
+</html>

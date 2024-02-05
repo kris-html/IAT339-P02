@@ -1,0 +1,311 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+body {
+  font-family: "Cousine", "AnonymousPro", 'Courier New', Courier, monospace;
+  padding: 2rem;
+  background-color: #2D2D2D;
+  color: rgb(247, 243, 239);
+}
+
+.element {
+  padding-bottom: 6rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: rgb(20, 20, 20);
+}
+
+nav{
+  padding: 1rem;
+  background-color: rgb(32, 32, 32);
+}
+
+h2 {
+  font-style: bold;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  max-width:60%;
+}
+
+code {
+  background-color: #474747;
+  color:white;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  background-color: #313131;
+}
+
+a:link{
+  text-decoration: underline;
+  padding: 1rem;
+  color: rgb(27, 158, 245);
+}
+
+a:visited{
+  color: rgb(21, 89, 216);
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+/* Input Text Field w Label */
+.textinput{
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color:rgb(236, 236, 236);
+  border: 1px solid rgb(8, 166, 228);
+  font-family: "Cousine";
+}
+
+.textinput:hover, .textinput:focus{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(112, 112, 112);
+  transition-duration: 0.3s;
+}
+/* End of Input Text Field w Label */
+
+/* Styling for the default button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 20px;
+  background-color: rgb(8, 166, 228);
+  text-decoration: none;
+  transition-duration: 0.2s;
+  border: 2px solid rgb(8, 166, 228);
+}
+
+.button-nav:link{
+  color:white;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(88, 206, 235);
+}
+/* End for the default button */
+
+/* Submit/Reset buttons Styling*/
+/* Submit */
+.button1{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgb(8, 166, 228);
+  transition-duration: 0.2s;
+  border: none;
+  font-family: "Cousine";
+  color:white;
+}
+
+.button1:hover, .button1:focus{
+  background-color: rgb(88, 206, 235);
+}
+
+/* Reset */
+.button2{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: white;
+  transition-duration: 0.2s;
+  border: 2px solid rgb(8, 166, 228);
+  font-family: "Cousine";
+}
+
+.button2:hover, .button2:focus{
+  background-color: rgb(216, 216, 216);
+}
+/* End of Submit/Reset buttons */
+
+/* Radio Button Styling */
+/* End of Button Styling */
+
+/* Link as Image Styling */
+.cat{
+  box-shadow: 0 0 0 2px rgb(5, 164, 226);
+}
+
+.cat:hover, .cat:focus{
+  box-shadow:0 0 0 4px rgb(1, 68, 145);
+}
+/* End of Link as Image Styling */
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Product Listing Styling */
+.product_listings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:auto;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.drawing_glove{
+  padding: 3rem;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  background-color: rgb(28, 152, 224);
+}
+
+.drawing_tablet{
+  padding: 3rem;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  background-color: rgb(224, 67, 28);
+}
+
+.drawing_pen{
+  padding: 3rem;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  color:rgb(20, 20, 20);
+  background-color: rgb(255, 232, 29);
+}
+
+.screen_protector{
+  padding: 3rem;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  background-color: rgb(14, 189, 145);
+}
+
+.product_description{
+  max-width: max-content;
+}
+
+.product_price{
+  text-align: center;
+}
+
+.add_to_cart{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: white;
+  transition-duration: 0.2s;
+  border: 1px solid rgb(8, 166, 228);
+  font-family: "Cousine";
+}
+
+.add_to_cart:hover{
+  background-color: rgb(228, 228, 228);
+  transition-duration: 0.3s;
+}
+/* End of Prooduct Listing Styling */
+
+/* Billing Styling */
+.payment_container{
+  margin:auto;
+  padding: 1rem;
+  max-width: 400px;
+  text-align: left;
+  background-color: rgb(241, 241, 241);
+  color: rgb(32, 32, 32);
+}
+
+.paymentinput{
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  background-color:rgb(224, 224, 224);
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 15px;
+}
+
+.paymentinput:hover, .paymentinput:focus{
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+}
+
+.submitbutton{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgb(8, 166, 228);
+  transition-duration: 0.2s;
+  border: 1px solid rgb(8, 166, 228);
+  color: white;
+  font-family: "Cousine";
+}
+
+.submitbutton:hover{
+  background-color: rgb(88, 206, 235);
+}
+/* End of Billing Styling */
+
+/* Checkout Cart Styling */
+.checkout_cart_container{
+  margin:auto;
+  padding: 3rem;
+  max-width: 400px;
+  text-align: left;
+  background-color: rgb(241, 241, 241);
+  color: rgb(32, 32, 32);
+}
+
+.checkoutbutton {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgb(8, 166, 228);
+  border: 1px solid rgb(8, 166, 228);
+  color: white;
+}
+
+.checkoutbutton:hover{
+  background-color: rgb(88, 206, 235);
+}
+/* End of Checkout Cart Styling */
