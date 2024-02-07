@@ -185,7 +185,7 @@ a:hover, a:focus{
   max-width: 300px;
   max-height: 300px;
   text-align: center;
-  background-color: rgb(28, 152, 224);
+  /* background-color: rgb(28, 152, 224); */
 }
 
 .drawing_tablet{
@@ -193,7 +193,7 @@ a:hover, a:focus{
   max-width: 300px;
   max-height: 300px;
   text-align: center;
-  background-color: rgb(224, 67, 28);
+  /* background-color: rgb(224, 67, 28); */
 }
 
 .drawing_pen{
@@ -202,7 +202,7 @@ a:hover, a:focus{
   max-height: 300px;
   text-align: center;
   color:rgb(20, 20, 20);
-  background-color: rgb(255, 232, 29);
+  /* background-color: rgb(255, 232, 29); */
 }
 
 .screen_protector{
@@ -210,7 +210,7 @@ a:hover, a:focus{
   max-width: 300px;
   max-height: 300px;
   text-align: center;
-  background-color: rgb(14, 189, 145);
+  /* background-color: rgb(14, 189, 145); */
 }
 
 .product_description{
