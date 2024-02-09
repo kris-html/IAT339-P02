@@ -91,21 +91,20 @@ a:hover, a:focus{
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   border-radius: 20px;
-  background-color: rgb(8, 166, 228);
+  background-color: white;
   text-decoration: none;
   transition-duration: 0.2s;
   border: 2px solid rgb(8, 166, 228);
 }
 
 .button-nav:link{
-  color:white;
+  color:black;
+  text-decoration: none;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(88, 206, 235);
+  background-color: rgb(216, 216, 216);
 }
 /* End for the default button */
 
@@ -256,7 +255,7 @@ a:hover, a:focus{
   border-radius: 20px;
   background-color:rgb(224, 224, 224);
   border: 1px solid rgb(112, 112, 112);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .paymentinput:hover, .paymentinput:focus{
