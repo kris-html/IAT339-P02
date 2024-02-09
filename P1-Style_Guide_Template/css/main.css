@@ -91,20 +91,21 @@ a:hover, a:focus{
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(8, 166, 228);
   text-decoration: none;
   transition-duration: 0.2s;
   border: 2px solid rgb(8, 166, 228);
 }
 
 .button-nav:link{
-  color:black;
-  text-decoration: none;
+  color:white;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(88, 206, 235);
 }
 /* End for the default button */
 
