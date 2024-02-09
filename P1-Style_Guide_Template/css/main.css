@@ -60,11 +60,11 @@ nav a:hover, nav a:focus {
 a:link{
   text-decoration: underline;
   padding: 1rem;
-  color: #4375D2;
+  color: #63C1FF;
 }
 
 a:visited{
-  color: #63C1FF;
+  color: #4375D2;
 }
 
 a:hover, a:focus{
@@ -200,7 +200,6 @@ a:hover, a:focus{
   max-width: 300px;
   max-height: 300px;
   text-align: center;
-  color:rgb(20, 20, 20);
   /* background-color: rgb(255, 232, 29); */
 }
 
