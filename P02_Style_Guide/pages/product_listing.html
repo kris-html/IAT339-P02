@@ -1,95 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <meta charset="utf-8">
-    <title>P01 Style Guide Template</title>
+<head>
 
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/fonts.css" rel="stylesheet"> 
+  <meta charset="utf-8">
+  <title>P01 Style Guide Template</title>
 
-  </head>
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
 
-  <body>
-    <header>
-        <h1>Products</h1>
-        <nav> 
-            <a href="../index.html">Home</a>
-            <a href="product_listing.html">Product Listings</a>
-            <a href="checkout.html">Checkout Cart</a>
-        </nav>
-    </header>
+</head>
 
-    <section class="element">
-        <h3>Product/Service Listing</h3>
+<body>
+  <header>
+    <h1>Products</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="product_listing.html">Product Listings</a>
+      <a href="checkout.html">Checkout Cart</a>
+    </nav>
+  </header>
 
-        <h4>CSS selector:</h4>
-        <p>.product_listings, .drawing_glove, .product_details</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;dive class="product_listings"&gt;<br>
-          &lt;div class="drawing_glove"&gt;<br>
-          &lt;img src="drawing glove.jpg"style="width:25%"&gt;<br>
-          &lt;div class="product_details"&gt;<br>
-          &lt;h2 class="product_name"&gt;Drawing Glove&lt;/h2&gt;<br>
-          &lt;p class="product_description&gt;Stylish glove made of 80% cotton 20% polyester.&lt;/p&gt;<br>
-          &lt;p class="product_price"&gt;$12.00&lt;/p&gt;<br>
-          &lt;button class=add_to_cart"&gt;Add To Cart&lt;/button&gt;<br>
-          &lt;/div&gt;<br>
-          &lt;/div&gt;<br>
-          &lt;/div&gt;<br>
-          &lt;section&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <div class="product_listings">
-          <div class="drawing_glove">
-            <!-- Drawing glove from GUUGEI on Amazon, https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1 -->
-            <img src="../images/drawing glove.jpg"style="width:50%">
-            <div class="product_details">
-              <h2 class="product_name">Drawing Glove</h2>
-              <p class="product_description">Stylish glove made of 80% cotton 20% polyester.</p>
-              <p class="product_price">$12.00</p>
-              <button class="add_to_cart">Add To Cart</button>
-            </div>
-          </div>
-
-          <div class="drawing_tablet">
-            <!-- Huion drawing tablet from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-            <img src="../images/huion tablet.png" style="width:60%">
-            <div class="product_details">
-              <h2 class="product_name">Huion Drawing Tablet</h2>
-              <p class="product_description">A medium drawing surface perfect for hardcore digital artists. </p>
-              <p class="product_price">$50.00</p>
-              <button class="add_to_cart">Add To Cart</button>
-            </div>
-          </div>
-
-          <div class="drawing_pen">
-            <!-- Huion drawing pen from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-            <img src="../images/huion pen.png" style="width:60%">
-            <div class="product_details">
-              <h2 class="product_name">Huion Drawing Pen</h2>
-              <p class="product_description">A new and sleek pen made for the comfort of your grip</p>
-              <p class="product_price">$50.00</p>
-              <button class="add_to_cart">Add To Cart</button>
-            </div>
-          </div>
-
-          <div class="screen_protector">
-            <!-- Screen protector from Paperlike, https://paperlike.com/ -->
-            <img src="../images/paperlike.png" style="width:50%; height:40%">
-            <div class="product_details">
-              <h2 class="product_name">Paper Screen Protector</h2>
-              <p class="product_description">Screen protector that feels like the real thing!</p>
-              <p class="product_price">$30.00</p>
-              <button class="add_to_cart">Add To Cart</button>
-            </div>
-          </div>
-
+  <section class="element">
+    <div class="product_listings">
+      <div class="drawing_glove">
+        <!-- Drawing glove from GUUGEI on Amazon, https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1 -->
+        <img src="../images/drawing glove.jpg" style="width:50%">
+        <div class="product_details">
+          <h2 class="product_name">Drawing Glove</h2>
+          <p class="product_description">Stylish glove made of 80% cotton 20% polyester.</p>
+          <p class="product_price">$12.00</p>
+          <button class="add_to_cart">Add To Cart</button>
         </div>
-      </section>
-  </body>
+      </div>
 
-  </html>
+      <div class="drawing_tablet">
+        <!-- Huion drawing tablet from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
+        <img src="../images/huion tablet.png" style="width:60%">
+        <div class="product_details">
+          <h2 class="product_name">Huion Drawing Tablet</h2>
+          <p class="product_description">A medium drawing surface perfect for hardcore digital artists. </p>
+          <p class="product_price">$50.00</p>
+          <button class="add_to_cart">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="drawing_pen">
+        <!-- Huion drawing pen from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
+        <img src="../images/huion pen.png" style="width:60%">
+        <div class="product_details">
+          <h2 class="product_name">Huion Drawing Pen</h2>
+          <p class="product_description">A new and sleek pen made for the comfort of your grip</p>
+          <p class="product_price">$50.00</p>
+          <button class="add_to_cart">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="screen_protector">
+        <!-- Screen protector from Paperlike, https://paperlike.com/ -->
+        <img src="../images/paperlike.png" style="width:50%; height:40%">
+        <div class="product_details">
+          <h2 class="product_name">Paper Screen Protector</h2>
+          <p class="product_description">Screen protector that feels like the real thing!</p>
+          <p class="product_price">$30.00</p>
+          <button class="add_to_cart">Add To Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>
