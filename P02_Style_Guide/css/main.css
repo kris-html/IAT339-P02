@@ -12,9 +12,9 @@ body {
 
 .element {
   padding-bottom: 6rem;
-  border-top-width: 0.15rem;
+  /* border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: rgb(20, 20, 20);
+  border-top-color: rgb(20, 20, 20); */
 }
 
 nav{
@@ -37,8 +37,7 @@ h4 {
 }
 
 p {
-  margin-top: 0;
-  max-width:60%;
+  max-width:80%;
 }
 
 code {
@@ -240,19 +239,31 @@ a:hover, a:focus{
 
 /* Billing Styling */
 .payment_container{
+  display: flex;
+  justify-content: center;
+
   margin:auto;
   padding: 1rem;
-  max-width: 400px;
+  /* max-width: 400px; */
   text-align: left;
-  background-color: rgb(241, 241, 241);
-  color: rgb(32, 32, 32);
+  background-color: #474747;
+  color: rgb(241, 241, 241);
+}
+
+.billing_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.card_container{
+  display: flex;
+  flex-direction: column;
 }
 
 .paymentinput{
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  background-color:rgb(224, 224, 224);
   border: 1px solid rgb(112, 112, 112);
   border-radius: 5px;
 }
@@ -265,10 +276,10 @@ a:hover, a:focus{
 .submitbutton{
   display: inline-block;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: rgb(8, 166, 228);
   transition-duration: 0.2s;
   border: 1px solid rgb(8, 166, 228);
@@ -283,21 +294,25 @@ a:hover, a:focus{
 
 /* Checkout Cart Styling */
 .checkout_cart_container{
+  display: flex;
+  
   margin:auto;
   padding: 3rem;
-  max-width: 400px;
+  max-width: 80%;
   text-align: left;
-  background-color: rgb(241, 241, 241);
-  color: rgb(32, 32, 32);
+  background-color: #474747;
+  color: rgb(241, 241, 241);
 }
 
-.checkoutbutton {
+.checkout_total{
+  text-align: right;
+}
+
+.checkoutbutton { /* NOT IN USE ON MAIN */
   display: inline-block;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   background-color: rgb(8, 166, 228);
   border: 1px solid rgb(8, 166, 228);
   color: white;
