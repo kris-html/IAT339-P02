@@ -16,7 +16,7 @@
           <a href="product_listing.html">Product Listings</a>
         </nav>
     
-        <h1>Apple Vision Pro</h1>
+        <h1>APPLE VISION PRO</h1>
         <p>Read about the Apple Vision Pro</p>
     </header>
 
@@ -28,18 +28,27 @@
         <div class="product_apple_desc">
             <h2>Product Details</h2>
             <p>A comfortable and form fitting headset useful for any event.</p>
-            <p>Headset uses micro-OLED displays.</p>
-            <p>External battery lasts up to 2 hours of general use and up to 2.5 hours of video playback.</p>
+            <p>Comes with: 30W USB-C Power Adapter, USB-C Charge Cable, and Light Seal Cushion</p>
+        </div>
+
+        <div class="product_apple_specs">
+            <h2>Specs</h2>
+            <p>Storage: 256GB, 512GB, 1TB</p>
+            <p>Refresh Rate: 90Hz, 96Hz, 100Hz</p>
+            <p>External battery life: 2 hours or 2.5 hours with video playback</p>
         </div>
 
         <div class="product_renting">
             <h2>Rent Now</h2>
             <p>25$/day</p>
-            <label for="start">Start:</label>
-            <input type="month" id="start" name="start" min="2024-01" value="2024-01" />
+            <label for="quantity">Number of Devices (Max 10):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" />
+
+            <label for="start">Start Date:</label>
+            <input type="date" id="start" name="start" min="2024-01" value="2024-01" />
             
-            <label for="end">End:</label>
-            <input type="month" id="end" name="end" min="2024-01" value="2024-01" />
+            <label for="end">End Date:</label>
+            <input type="date" id="end" name="end" min="2024-01" value="2024-01" />
 
             <button type="submit" value="Submit" class="submitbutton">Add To Cart</button>
         </div>
