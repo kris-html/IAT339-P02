@@ -56,20 +56,35 @@ nav{
 
 }
 
-.landingpage-banner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../images/bg.png);
-    /* background-size: cover; */
-    background-position-x: 20%;
-    background-position-y: 20%;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-repeat: no-repeat;
-    /* the image is in the background hence -1 */
+.contactus-info{
+    position: relative;
+    .contacts_message{
+        width: 100%;
+    }
 }
+
+.banner{
+    margin: 1em 1em;
+    .landingpage-banner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../images/bg.png);
+        /* background-size: cover; */
+        background-position-x: 20%;
+        background-position-y: 20%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        /* the image is in the background hence -1 */
+    }
+
+    h1,p.subheading{
+        margin:0em ,1em;
+    }
+}
+
 
 .logo{
 /* potentially adding text later, rn it's png?\ */
@@ -87,12 +102,37 @@ header{
 }
 
 
-
 h1{
     font-size: 3rem;
-    margin-top: 2em;
+    margin: 1em 0.5em;
     line-height: 3.3rem;
 }
+
+h2{
+    font-size: 2em;
+    margin: 2em 1em;
+    line-height: 2.2rem;
+}
+
+p{
+    margin: 0.5 1em;
+}
+
+button{
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: white;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    border: 2px solid rgb(8, 166, 228);
+    border: 1em;
+}
+
+div{
+    margin:3em 1em;
+}
+
 section.landingpage-banner{
 
     color: rgb(251, 251, 255);
@@ -124,7 +164,7 @@ section.landingpage-banner{
 }
 @media only screen and (min-width:430px){
     .banner{
-        margin-bottom: 12em;
+        margin-bottom: 8em;
     }
     
     body{
@@ -134,6 +174,43 @@ section.landingpage-banner{
     }
 }
 @media only screen and (min-width: 824px) {
+
+    .menu-icon{
+        display: none;
+    }
+
+    nav{
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width:auto;
+        height: auto;
+        background: none;
+        svg.close_icon,svg.menu-icon{
+            display: none;
+        }
+
+        ul{
+            display: flex;
+            margin: 0;
+        }
+        a{
+            color: aqua;
+            padding: .5em 1.5em;
+            font-size: .9em;
+            
+            &:hover{
+                background: none;
+                text-decoration: underline;
+            }
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
     .menu-icon{
         display: none;
     }
