@@ -57,9 +57,17 @@ nav{
 }
 
 .contactus-info{
+    form {
+        width: 500px;
+        overflow: hidden;
+        background-color: yellow;
+        }
+        input {
+        width: 100%;
+        }
     position: relative;
     .contacts_message{
-        width: 100%;
+        width:100% ;
     }
 }
 
@@ -143,6 +151,9 @@ section.landingpage-banner{
 }
 
 .product{
+    position: relative;
+    position: center;
+    text-align: center;
     img{
         width: 100%;
         object-fit: cover;
@@ -155,6 +166,8 @@ section.landingpage-banner{
     .desc{
         line-height: 1.5rem;
     }
+
+    width: 50%;
 }
 
 @media only screen and (min-width:430px){
@@ -244,3 +257,73 @@ section.landingpage-banner{
     }
     
 }
+
+
+/* Product Listing Styling */
+.product_listings{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .drawing_glove{
+    padding: 3rem;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    /* background-color: rgb(28, 152, 224); */
+  }
+  
+  .drawing_tablet{
+    padding: 3rem;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    /* background-color: rgb(224, 67, 28); */
+  }
+  
+  .drawing_pen{
+    padding: 3rem;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    /* background-color: rgb(255, 232, 29); */
+  }
+  
+  .screen_protector{
+    padding: 3rem;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    /* background-color: rgb(14, 189, 145); */
+  }
+  
+  .product_description{
+    max-width: max-content;
+  }
+  
+  .product_price{
+    text-align: center;
+  }
+  
+  .add_to_cart{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: white;
+    transition-duration: 0.2s;
+    border: 1px solid rgb(8, 166, 228);
+    font-family: "Cousine";
+  }
+  
+  .add_to_cart:hover{
+    background-color: rgb(228, 228, 228);
+    transition-duration: 0.3s;
+  }
+  /* End of Prooduct Listing Styling */
