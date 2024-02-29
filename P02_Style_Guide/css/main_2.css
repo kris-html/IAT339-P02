@@ -12,9 +12,9 @@ a{
     font-size: 1.3rem; 
 }
 
-.banner{
+/* .banner{
     margin-bottom: 10em;
-}
+} */
 
 nav{
     position: fixed;
@@ -56,7 +56,7 @@ nav{
 
 }
 
-.contactus-info{
+.contactus_review{
     form {
         width: 500px;
         overflow: hidden;
@@ -72,6 +72,7 @@ nav{
 }
 
 .banner{
+    margin-bottom: 10em;
     margin: 1em 1em;
     .landingpage-banner{
         position: absolute;
@@ -188,7 +189,7 @@ section.landingpage-banner{
 }
 @media only screen and (min-width: 824px) {
 
-    .menu-icon{
+    .menu_icon{
         display: none;
     }
 
