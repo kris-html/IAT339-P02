@@ -268,47 +268,26 @@ section.landingpage-banner{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:auto;
     justify-content: center;
-    padding: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+    }
   }
   
   .product_description, .product_price, .product_name{
     text-align: left;
   }
 
-  .applevisionpro{
+  .applevisionpro, .huiontablet, .metaquest3, .wacomtablet{
     padding: 2rem;
-    max-width: 20rem;
-    max-height: 300px;
+    max-width: 22rem;
+    max-height: 30rem;
     text-align: center;
-    /* background-color: rgb(28, 152, 224); */
   }
-  
-  .huiontablet{
-    padding: 2rem;
-    max-width: 20rem;
-    max-height: 300px;
-    text-align: center;
-    /* background-color: rgb(224, 67, 28); */
-  }
-  
-  .metaquest3{
-    padding: 2rem;
-    max-width: 20rem;
-    max-height: 300px;
-    text-align: center;
-    /* background-color: rgb(255, 232, 29); */
-  }
-  
-  .wacomtablet{
-    padding: 2rem;
-    max-width: 20rem;
-    max-height: 300px;
-    text-align: center;
-    /* background-color: rgb(14, 189, 145); */
-  }
+
   
   .product_description{
     max-width: max-content;
