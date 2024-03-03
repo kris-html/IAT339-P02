@@ -2,7 +2,7 @@ body{
     color: rgb(174, 174, 174);
     margin: 1.5em;
     font-family: 'Lexend',sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 12, 29);
 }
 
 /* margins with em and fonts with rem */
@@ -11,10 +11,6 @@ a{
     text-decoration: none;
     font-size: 1.3rem; 
 }
-
-/* .banner{
-    margin-bottom: 10em;
-} */
 
 nav{
     position: fixed;
@@ -56,24 +52,27 @@ nav{
 
 }
 
+.aboutus{
+    max-width: 80rem;
+    
+}
+
+.review{
+    max-width: 25rem;
+}
+
 .contactus_container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     position: relative;
-    padding: 5rem;
-    background-color: rgb(24, 24, 31);
-}
-.contacts_message{
-        width: 500px;
-        background-color: rgb(211, 251, 255);
-        
-        input {
-        width: 100%;
-        }
-
+    background-color: rgb(26, 29, 27);
+    flex-wrap: wrap;
 }
 
-
+.contacts_message, .contacts_name, .contact_email{
+    width: 10rem;
+}
 
 .banner{
     padding: 5em 5em;
@@ -117,7 +116,7 @@ header{
 
 h1{
     font-size: 3rem;
-    margin: 1em 1em;
+    /* margin: 1em 1em; */
     line-height: 3.3rem;
 }
 
@@ -271,36 +270,41 @@ section.landingpage-banner{
     flex-wrap: wrap;
     margin:auto;
     justify-content: center;
-    padding: 1rem;
+    padding: 3rem;
+    padding-bottom: 10rem;
   }
   
+  .product_description, .product_price, .product_name{
+    text-align: left;
+  }
+
   .applevisionpro{
-    padding: 3rem;
-    max-width: 300px;
+    padding: 2rem;
+    max-width: 20rem;
     max-height: 300px;
     text-align: center;
     /* background-color: rgb(28, 152, 224); */
   }
   
   .huiontablet{
-    padding: 3rem;
-    max-width: 300px;
+    padding: 2rem;
+    max-width: 20rem;
     max-height: 300px;
     text-align: center;
     /* background-color: rgb(224, 67, 28); */
   }
   
-  .drawing_pen{
-    padding: 3rem;
-    max-width: 300px;
+  .metaquest3{
+    padding: 2rem;
+    max-width: 20rem;
     max-height: 300px;
     text-align: center;
     /* background-color: rgb(255, 232, 29); */
   }
   
-  .screen_protector{
-    padding: 3rem;
-    max-width: 300px;
+  .wacomtablet{
+    padding: 2rem;
+    max-width: 20rem;
     max-height: 300px;
     text-align: center;
     /* background-color: rgb(14, 189, 145); */
@@ -389,14 +393,13 @@ section.landingpage-banner{
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgb(8, 166, 228);
     transition-duration: 0.2s;
     border: 1px solid rgb(8, 166, 228);
     color: white;
-    font-family: "Cousine";
   }
   
   .submitbutton:hover{
