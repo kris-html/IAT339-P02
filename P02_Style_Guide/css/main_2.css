@@ -51,6 +51,14 @@ nav{
 
 
 }
+
+.aboutus{
+    p{
+        text-align: center;
+    }
+    
+}
+
 .review{
     max-width: 25rem;
 }
