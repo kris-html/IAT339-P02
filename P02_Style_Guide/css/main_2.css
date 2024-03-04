@@ -51,12 +51,6 @@ nav{
 
 
 }
-
-.aboutus{
-    max-width: 80rem;
-    
-}
-
 .review{
     max-width: 25rem;
 }
@@ -142,7 +136,7 @@ button{
 }
 
 div{
-    margin:3em 1em;
+    margin:1em 1em;
 }
 
 section.landingpage-banner{
@@ -158,15 +152,15 @@ section{
     position: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 1em;
 }
 .product{
     position: relative;
     position: center;
     text-align: center;
     img{
-        width: 100%;
+        height: 100%;
         object-fit: cover;
-        height: 11em;
     }
 
     .title{
@@ -175,8 +169,6 @@ section{
     .desc{
         line-height: 1.5rem;
     }
-
-    width: 50%;
 }
 
 @media only screen and (min-width:430px){
