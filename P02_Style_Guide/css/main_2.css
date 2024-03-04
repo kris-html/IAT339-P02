@@ -98,7 +98,6 @@ nav{
     }
 }
 
-
 .logo{
 /* potentially adding text later, rn it's png?\ */
 }
@@ -124,6 +123,7 @@ h2{
     font-size: 2em;
     margin: 2em 1em;
     line-height: 2.2rem;
+    text-align: center;
 }
 
 p{
@@ -154,6 +154,11 @@ section.landingpage-banner{
     }
 }
 
+section{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+}
 .product{
     position: relative;
     position: center;
@@ -265,11 +270,11 @@ section.landingpage-banner{
 
 /* Product Listing Styling */
 .product_listings{
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 12rem;
     img{
         width: 100%;
         object-fit: cover;
