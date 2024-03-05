@@ -1,74 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
   <meta charset="utf-8">
   <title>ArtXTech Products</title>
 
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/main_2.css" rel="stylesheet">
   <link href="../css/fonts.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <header>
-    <h1>Products</h1>
+  <header class="header">
+    <a href="../main.html"><img src="../images/Logo.png" alt="logo"></a>
+
     <nav>
-      <a href="../index.html">Home</a>
-      <a href="product_listing.html">Product Listings</a>
-      <a href="checkout.html">Checkout Cart</a>
+      <svg class="close_icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="60" height="60" rx="6" fill="#D9D9D9" />
+        <line y1="-4" x2="58.3371" y2="-4" transform="matrix(0.719191 0.694812 -0.719191 0.694812 6 12)" stroke="white"
+          stroke-width="8" />
+        <line y1="-4" x2="58.3371" y2="-4" transform="matrix(-0.719191 0.694812 0.719191 0.694812 53.7556 11.4004)"
+          stroke="white" stroke-width="8" />
+      </svg>
+      <ul>
+        <li><a href="product_listing.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
     </nav>
+
+    <svg class="menu-icon" viewBox="0 0 146 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="22" y1="35.0049" x2="122.005" y2="35.0049" stroke="white" stroke-width="15" />
+      <line x1="36" y1="71.0049" x2="122" y2="71.0049" stroke="white" stroke-width="15" />
+      <line x1="22" y1="107.005" x2="122.005" y2="107.005" stroke="white" stroke-width="15" />
+    </svg>
+
   </header>
 
   <section class="element">
+    <h1>Products</h1>
+
     <div class="product_listings">
-      <div class="drawing_glove">
-        <!-- Drawing glove from GUUGEI on Amazon, https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1 -->
-        <img src="../images/drawing glove.jpg" style="width:50%">
+      <div class="applevisionpro">
+        <img src="../images/Apple Pro.png" style="width:70%" alt="Apple Vision Pro">
         <div class="product_details">
-          <h2 class="product_name">Drawing Glove</h2>
-          <p class="product_description">Stylish glove made of 80% cotton 20% polyester.</p>
-          <p class="product_price">$12.00</p>
-          <button class="add_to_cart">Add To Cart</button>
+          <h2 class="product_name">Apple Vision Pro</h2>
+          <p class="product_description">The newest release from Apple!</p>
+          <p class="product_price">$50.00/day</p>
+          <a href="product_applevisionpro.html">
+            <button class="add_to_cart">Learn More</button>
+          </a>
         </div>
       </div>
 
-      <div class="drawing_tablet">
-        <!-- Huion drawing tablet from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-        <img src="../images/huion tablet.png" style="width:60%">
+      <div class="huiontablet">
+        <img src="../images/huion tablet.png" style="width:60%" alt="Huion small black drawing tablet">
         <div class="product_details">
           <h2 class="product_name">Huion Drawing Tablet</h2>
           <p class="product_description">A medium drawing surface perfect for hardcore digital artists. </p>
-          <p class="product_price">$50.00</p>
-          <button class="add_to_cart">Add To Cart</button>
+          <p class="product_price">$25.00/day</p>
+          <a href="product_huiontablet.html">
+            <button class="add_to_cart">Learn More</button>
+          </a>
         </div>
       </div>
 
-      <div class="drawing_pen">
-        <!-- Huion drawing pen from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-        <img src="../images/huion pen.png" style="width:60%">
+      <div class="wacomtablet">
+        <img src="../images/wacom tablet.jpg" style="width:60%" alt="Wacom Tablet">
         <div class="product_details">
-          <h2 class="product_name">Huion Drawing Pen</h2>
-          <p class="product_description">A new and sleek pen made for the comfort of your grip</p>
-          <p class="product_price">$50.00</p>
-          <button class="add_to_cart">Add To Cart</button>
+          <h2 class="product_name">Wacom Drawing Tablet</h2>
+          <p class="product_description">A smaller tablet for beginner artists!</p>
+          <p class="product_price">$20.00/day</p>
+          <button class="add_to_cart">Learn More</button>
         </div>
       </div>
 
-      <div class="screen_protector">
-        <!-- Screen protector from Paperlike, https://paperlike.com/ -->
-        <img src="../images/paperlike.png" style="width:50%; height:40%">
+      <div class="metaquest3">
+        <img src="../images/Meta Quest 3.png" style="width:50%; height:40%" alt="Meta Quest 3 VR headset">
         <div class="product_details">
-          <h2 class="product_name">Paper Screen Protector</h2>
-          <p class="product_description">Screen protector that feels like the real thing!</p>
-          <p class="product_price">$30.00</p>
-          <button class="add_to_cart">Add To Cart</button>
+          <h2 class="product_name">Meta Quest 3</h2>
+          <p class="product_description">An advanced headset for the explorers!</p>
+          <p class="product_price">$90.00/day</p>
+          <button class="add_to_cart">Learn More</button>
         </div>
       </div>
 
     </div>
   </section>
+
+  <footer class="contactus_container">
+    <div class="company">
+      <h3>ArtXTech</h3>
+      <p>Telephone: 000-000-0000</p>
+      <p>Email: example@email.com</p>
+      <p>Location: Backstreet 123 Ave, Orange County, California</p>
+    </div>
+
+    <div class="review">
+      <h3>Contact Us</h3>
+      <p>Let us know how we are doing! Or for any question~</p>
+      
+      <input class="contacts_name" tabindex="1" value="Name">
+      <input class="contacts_email" tabindex="2" value="Email">
+      <input class="contacts_message" tabindex="3" value="Your Review!">
+    </div>
+
+    <div class="newsletter">
+      <h3>Stay up to date with us!</h3>
+      <label for="newsletter_input">Email</label>
+      <input type="text" class="contactus_newsletter_input" id="newsletter_input" name="newsletter_input">
+      <button type="submit" value="Submit" class="submitbutton">Subscribe</button>
+    </div>
+  </footer>
 </body>
 
 </html>
