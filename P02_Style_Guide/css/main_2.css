@@ -7,6 +7,12 @@ body{
 
 /* margins with em and fonts with rem */
 
+.contacts_name, .contacts_email, .contactus_newsletter_input{
+    
+}
+
+.contacts_message
+
 a{
     text-decoration: none;
     font-size: 1.3rem; 
