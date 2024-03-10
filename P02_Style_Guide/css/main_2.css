@@ -8,10 +8,35 @@ body{
 /* margins with em and fonts with rem */
 
 .contacts_name, .contacts_email, .contactus_newsletter_input{
-    
+    border-radius: 5px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    border: none;
 }
 
-.contacts_message
+textarea{
+    max-width: 21.5rem;
+    max-height: 5rem;
+    min-width: 18rem;
+    min-height: 3rem;
+}
+
+.contacts_message{
+    border-radius: 5px;
+    padding: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 10.2rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.contact_submit{
+    border: 1px solid white;
+    margin-top: 1rem;
+    width: 22rem;
+}
 
 a{
     text-decoration: none;
@@ -81,17 +106,14 @@ nav{
 }
 
 .contactus_container{
-    margin: 0em 0em;
+    margin: 0em;
+    margin-top: 5em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
     background-color: var(--footer-color);
     flex-wrap: wrap;
-}
-
-.contacts_message, .contacts_name, .contact_email{
-    width: 10rem;
 }
 
 .banner{
@@ -154,7 +176,7 @@ p{
 button{
     display: inline-block;
     padding: 0.5rem;
-    border-radius: 1em;
+    border-radius: 5px;
     background-color:var(--primary-color);
     border: #8ED2FF;
     text-decoration: none;
@@ -239,7 +261,7 @@ section{
   .add_to_cart{
     display: inline-block;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -300,16 +322,21 @@ section{
   .paymentinput{
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border-radius: 20px;
     border: 1px solid rgb(112, 112, 112);
     border-radius: 5px;
   }
   
   .paymentinput:hover, .paymentinput:focus{
     background-color: var(--button-color-selected);
-    border: 1px solid black;
+    border: 1px solid white;
   }
   
+  .footersubmit{
+    margin: 1rem;
+    width: 7rem;
+    border: 1px solid white;
+  }
+
   /* .submitbutton{
     display: inline-block;
     text-decoration: none;
