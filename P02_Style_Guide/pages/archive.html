@@ -18,15 +18,9 @@
 
         <nav>
             <ul>
-                <li><a href="../main.html">Landing Page</a></li>
-                <li><a href="#interactive_elements">Interactive Elements</a></li>
-                <li><a href="#text_elements">Text Elements</a></li>
-                <li><a href="#combined_elements">Combined Elements</a></li>
-                <li><a href="#copmany_breakdown">Company Breakdown</a></li>
-                <li><a href="#product_listing.html">Product Listings</a></li>
-                <li><a href="#checkout.html">Checkout</a></li>
-                <li><a href="#citations">Citations</a></li>
-                
+                <li><a href="product_listing.html">Products</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
             </ul>
         </nav>
 
@@ -34,278 +28,93 @@
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-        <h1>ArtXTech Reference</h1>
+        <h1>ArtXTech Style Guide</h1>
 
-        <h2>Interactive Elements</h2>
+        <section id="text_elements">
+            <h2 class="archive_title">Text Elements</h2>
 
-        <section class="element">
-            <h3>In-text link</h3>
+            <section class="heading_element">
+                <h1>Heading Type 1</h1>
+                <h2>Heading Type 2</h2>
+                <h3>Heading Type 3</h3>
+                <h4>Heading Type 4</h4>
+                <h5>Heading Type 5</h5>
+                <h6>Heading Type 6</h6>
+            </section>
 
-            <h4>CSS selector:</h4>
-            <p>.a</p>
+            <section class="paragraph_element">
+                <p>Paragraph</p>
+            </section>
 
-            <h4>Sample code:</h4>
-            <code>&lt;a href="https://www.youtube.com/"&gt;YouTube&lt;/a&gt;</code>
+            <section class="list_element">
+                <ol type="1">
+                    <li>Tablet Pen</li>
+                    <li>Drawing Tablets</li>
+                    <li>Apple Vision Pro</li>
+                </ol>
+            </section>
 
-            <h4>Rendered element:</h4>
-            <a href="https://www.youtube.com/">YouTube</a>
         </section>
+        <!-- // TEXT ELEMENTS SECTION -->
 
+        <h2 class="archive_title">Interactive Elements</h2>
 
-        <!-- Default Button styling section -->
-        <section class="element">
+        <section>
+            <a href="https://www.youtube.com/">In-Text Link</a>
 
-            <h3>Navigation Link</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-            <h4>Rendered element:</h4>
             <a class="button-nav" href="#">Default Button</a>
 
-        </section>
-
-
-        <section class="element">
-            <h3>Submit/Reset Buttons</h3>
-            <p></p>
-
-            <h4>CSS selector:</h4>
-            <p>.button1, .button2</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
-          <br> &lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;
-        </code>
-
-            <h4>Rendered element:</h4>
             <form>
                 <button class="button1" type="submit" value="Submit">Submit</button>
                 <button class="button2" type="reset" value="Reset">Reset</button>
             </form>
-        </section>
+
+            <section class="element">
+                <label for="newsletter_input">Insert Here</label> 
+                <input type="text" class="contactus_newsletter_input" id="newsletter_input" name="newsletter_input" placeholder="Email">
+            </section>
 
 
-        <section class="element">
-            <h3>Text Input Field with Label</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.input [type=text]</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;label for="entertext"&gt;Enter Text:&lt;/label&gt;&lt;br&gt;</code>
-            <code>&lt;input for="text" id="entertext" name="entertext"&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <label for="entertext">Enter Text:</label>
-            <input type="text" id="entertext" name="entertext" class="textinput" placeholder="Placeholder Text">
-        </section>
+            <section class="element">
+                <label class="checklist">
+                    <input type="radio" id="red" name="bestcolor" value="Red">
+                    <label for="red">Red</label><br>
+                    <input type="radio" id="blue" name="bestcolor" value="Blue">
+                    <label for="blue">Blue</label><br>
+                    <input type="radio" id="yellow" name="bestcolor" value="Yellow">
+                    <label for="yellow">Yellow</label>
+                </label>
+            </section>
 
 
-        <section class="element">
-            <h3>Radio Button with Label</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.checklist</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;label class="checklist"&gt;<br> 
-          &lt;input type="radio" id="red" name="bestcolor" value="Red"&gt;<br>
-          &lt;/label&gt;
-        </code>
-
-            <h4>Rendered element:</h4>
-            <label class="checklist">
-                <input type="radio" id="red" name="bestcolor" value="Red">
-                <label for="red">Red</label><br>
-                <input type="radio" id="blue" name="bestcolor" value="Blue">
-                <label for="blue">Blue</label><br>
-                <input type="radio" id="yellow" name="bestcolor" value="Yellow">
-                <label for="yellow">Yellow</label>
-            </label>
-        </section>
-
-
-        <section class="element">
-            <h3>Image as a Link</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.a</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;a href="https://twitter.com/weirdlilguys"&gt; &lt;img src="../images/wacom tablet.jpg" style="width:300px;height:300px;"&gt; &lt;/a&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <a href="https://twitter.com/weirdlilguys"> <img src="../images/wacom tablet.jpg" class="cat"
-                    style="width:300px;height:300px;"> </a>
+            <section class="element">
+                <a href="https://wacomstore.ca/product-category/drawing-tablets/intuos/"> <img src="../images/wacom tablet.jpg" class="cat"
+                        style="width:300px;height:300px;"> </a>
+            </section>
         </section>
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-        <h2>Text Elements</h2>
-
-        <section class="element">
-            <h3>Headings</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.h1, .h2, .h3, .h4, .h5, .h6</p>
-
-            <h4>Sample code:</h4>
-            <code> &lt;h1&gt;Heading Type 1&lt;/h1&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <h1>Heading Type 1</h1>
-            <h2>Heading Type 2</h2>
-            <h3>Heading Type 3</h3>
-            <h4>Heading Type 4</h4>
-            <h5>Heading Type 5</h5>
-            <h6>Heading Type 6</h6>
-
-        </section>
-
-        <section class="element">
-            <h3>Paragraphs</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.p</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;p&gt;Example of a paragraph element&lt;/p&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <p>This website gives you easy access and navigation to all things digital arts.</p>
-
-        </section>
-
-        <section class="element">
-            <h3>Numbered Lists</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.ul</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;ol type="1"&gt;
-          &lt;li&gt;Tablet Pen&lt;/li&gt;<br> 
-          &lt;li&gt;Drawing Tablets&lt;/li&gt;<br> 
-          &lt;li&gt;Screen Protector&lt;/li&gt;<br> 
-          &lt;/ol&gt;<br> 
-        </code>
-
-            <h4>Rendered element:</h4>
-            <ol type="1">
-                <li>Tablet Pen</li>
-                <li>Drawing Tablets</li>
-                <li>Screen Protector</li>
-            </ol>
-
-        </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-        <h2>Combined Elements</h2>
-
-        <section class="element">
-            <h3>Main Navigation</h3>
-
-            <h4>CSS selector:</h4>
-            .button-menu
-
-            <h4>Sample code:</h4>
-            <code>
-          &lt;a class="button-menu" href="#"&gt;Tablets&lt;/a&gt;<br>
-          &lt;a class="button-menu" href="#"&gt;Accessories&lt;/a&gt;<br>
-          &lt;a class="button-menu" href="#"&gt;Display&lt;/a&gt;
-        </code>
-
-            <h4>Rendered element:</h4>
-            <a class="button-menu" href="#">Tablets</a>
-            <a class="button-menu" href="#">Accessories</a>
-            <a class="button-menu" href="#">Display</a>
-        </section>
-        <!-- // COMBINED ELEMENTS SECTION -->
+        <h2 class="archive_title">Combined Elements</h2>
 
         <!-- Product Listings -->
         <section class="element">
-            <h3>Product/Service Listing</h3>
 
-            <h4>CSS selector:</h4>
-            <p>.product_listings, .drawing_glove, .product_details</p>
-
-            <h4>Sample code:</h4>
-            <code>
-              &lt;dive class="product_listings"&gt;<br>
-              &lt;div class="drawing_glove"&gt;<br>
-              &lt;img src="drawing glove.jpg"style="width:25%"&gt;<br>
-              &lt;div class="product_details"&gt;<br>
-              &lt;h2 class="product_name"&gt;Drawing Glove&lt;/h2&gt;<br>
-              &lt;p class="product_description&gt;Stylish glove made of 80% cotton 20% polyester.&lt;/p&gt;<br>
-              &lt;p class="product_price"&gt;$12.00&lt;/p&gt;<br>
-              &lt;button class=add_to_cart"&gt;Add To Cart&lt;/button&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;section&gt;
-            </code>
-
-            <h4>Rendered element:</h4>
             <div class="product_listings">
-                <div class="drawing_glove">
-                    <!-- Drawing glove from GUUGEI on Amazon, https://www.amazon.ca/Rejection-Elasticity-Breathable-Sketching-Painting/dp/B0B42C3N8K?th=1 -->
-                    <img src="../images/drawing glove.jpg" style="width:50%">
+                <div class="huiontablet">
+                    <img src="../images/huion tablet.png" style="width:60%" alt="Huion small black drawing tablet">
                     <div class="product_details">
-                        <h2 class="product_name">Drawing Glove</h2>
-                        <p class="product_description">Stylish glove made of 80% cotton 20% polyester.</p>
-                        <p class="product_price">$12.00</p>
-                        <button class="add_to_cart">Add To Cart</button>
+                      <h2 class="product_name">Huion Drawing Tablet</h2>
+                      <p class="product_description">A medium drawing surface perfect for hardcore digital artists. </p>
+                      <p class="product_price">$25.00/day</p>
+                      <a href="product_huiontablet.html">
+                        <button class="add_to_cart">Learn More</button>
+                      </a>
                     </div>
-                </div>
-
-                <div class="drawing_tablet">
-                    <!-- Huion drawing tablet from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-                    <img src="../images/huion tablet.png" style="width:60%">
-                    <div class="product_details">
-                        <h2 class="product_name">Huion Drawing Tablet</h2>
-                        <p class="product_description">A medium drawing surface perfect for hardcore digital artists.
-                        </p>
-                        <p class="product_price">$50.00</p>
-                        <button class="add_to_cart">Add To Cart</button>
-                    </div>
-                </div>
-
-                <div class="drawing_pen">
-                    <!-- Huion drawing pen from Connie Park, The New York Times, https://www.nytimes.com/wirecutter/reviews/best-drawing-tablets/ -->
-                    <img src="../images/huion pen.png" style="width:60%">
-                    <div class="product_details">
-                        <h2 class="product_name">Huion Drawing Pen</h2>
-                        <p class="product_description">A new and sleek pen made for the comfort of your grip</p>
-                        <p class="product_price">$50.00</p>
-                        <button class="add_to_cart">Add To Cart</button>
-                    </div>
-                </div>
-
-                <div class="screen_protector">
-                    <!-- Screen protector from Paperlike, https://paperlike.com/ -->
-                    <img src="../images/paperlike.png" style="width:50%; height:40%">
-                    <div class="product_details">
-                        <h2 class="product_name">Paper Screen Protector</h2>
-                        <p class="product_description">Screen protector that feels like the real thing!</p>
-                        <p class="product_price">$30.00</p>
-                        <button class="add_to_cart">Add To Cart</button>
-                    </div>
-                </div>
+                  </div>
 
             </div>
         </section>
@@ -313,47 +122,20 @@
 
         <!-- Checkout Cart -->
         <section class="element">
-            <h4>CSS selector:</h4>
-            <p>.checkout_cart_container, .checkout_header, .checkout_total</p>
 
-            <h4>Sample code:</h4>
-            <code>
-                  &lt;dive class="checlout_cart_container"&gt;<br>
-                  &lt;div class="checkout_header"&gt;<br>
-                  &lt;h3&gt;Checkout Cart&lt;/h3&gt;<br>
-                  &lt;/div&gt;<br>
-        
-                  &lt;div class="checkout_inventory"&gt;<br>
-                  &lt;h4&gt;Cart Inventory&lt;/h4&gt;<br>
-                  &lt;p&gt;Drawing Glove&lt;b&gt;$12.00&lt;/b&gt;<br>
-                  &lt;p&gt;Screen Protector&lt;b&gt;$20.00&lt;/b&gt;<br>
-                  &lt;/div&gt;<br>
-        
-                  &lt;div class="checkout_total"&gt;<br>
-                  &lt;p&gt;Total&lt;b&gt;$32.00&lt;/b&gt;<br>
-                  &lt;button type="submit" value="Submit"&gt;Checkout&lt;/button&gt;<br>
-                  &lt;/div&gt;
-                </code>
-
-            <h4>Rendered element:</h4>
             <div class="checkout_cart_container">
-                <div class="checkout_header">
-                    <h2>Checkout Cart</h2>
-                </div>
 
-                <div class="checkout_inventory">
-                    <img src="/images/Shopping_cart_icon.svg" width="100px" alt="The shopping Cart SVG" />
-                    <p>Drawing Glove <b>$12.00</b></p>
-                    <p>Screen Protector <b>$30.00</b></p>
+                <div class="checkout_image">
+                  <img src="../images/AppleVisionPro.png" width="50%" alt="Apple Vision Pro on display" />
                 </div>
-
-                <div class="checkout_total">
-                    <p>Total:</p>
-                    <p class="total_checkout_price">$42.00</p>
-                    <a href="payment.html" value="submit" class="checkoutbutton"><button>Proceed to Payment</button>
-                    </a>
+          
+                <div class="checkout_detail">
+                  <p>Apple Vision Pro</p>
+                  <p>Rental Period: 3 Days</p>
+                  <p>Return Before: March 30, 2024, 4:00PM PST</p>
+                  <p>$150.00</p>
                 </div>
-            </div>
+              </div>
 
             </div>
         </section>
@@ -361,87 +143,66 @@
 
         <!-- Payment -->
         <section id="payment">
-            <h3>Payment Form</h3>
 
-            <h4>CSS selector:</h4>
-            <p>.payment_container, .billing_container, .card_container</p>
-
-            <h4>Sample code:</h4>
-            <code>
-              &lt;div class="payment_container"&gt;<br>
-              &lt;div class="billing_container"&gt;<br>
-              &lt;h3&gt;Billing Information&lt;/h3&gt;<br>
-              &lt;label for="billingname"&gt; Full Name for Billing&lt;/label&gt;&lt;br&gt;<br>
-              &lt;input type="text" id="billingname" name="billingname"&gt;&lt;br&gt;<br>
-              <br>
-              &lt;label for="address"&gt; Address&lt;/label&gt;&lt;br&gt;<br>
-              &lt;input type="text" id="address" name="address"&gt;&lt;br&gt;<br>
-              <br>
-              &lt;label for="phonenumber"&gt; Phone Number&lt;/label&gt;&lt;br&gt;<br>
-              &lt;input type="text" id="phonenumber" name="phonenumber"&gt;&lt;br&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;
-            </code>
-
-            <h4>Rendered element:</h4>
             <div class="payment_container">
-                <form>
-                    <div class="billing_container">
+                <div class="billing_container">
 
-                        <h2>Payment</h2>
-                        <h3>Billing Information</h3>
-                        <label for="billingname">Full Name</label><br>
-                        <input type="text" id="billingname" class="paymentinput" name="billingname"
-                            placeholder="John Doe"><br>
+                    <h2>Payment</h2>
+                    <h3>Billing Information</h3>
+                    <label for="billingname">Full Name</label><br>
+                    <input type="text" id="billingname" class="paymentinput" name="billingname"
+                        placeholder="John Doe"><br>
 
-                        <label for="address">Address</label><br>
-                        <input type="text" id="address" class="paymentinput" name="address"
-                            placeholder="123 ABC Street"><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" class="paymentinput" name="address"
+                        placeholder="123 ABC Street"><br>
 
-                        <label for="phonenumber">Phone Number</label><br>
-                        <input type="text" id="phonenumber" class="paymentinput" name="phonenumber"
-                            placeholder="000 000 000">
-                    </div>
+                    <label for="phonenumber">Phone Number</label><br>
+                    <input type="text" id="phonenumber" class="paymentinput" name="phonenumber"
+                        placeholder="000 000 000">
+                </div>
 
-                    <div class="card_container">
-                        <h3>Payment</h3>
-                        <label for="cardname">Full Name on Card</label><br>
-                        <input type="text" id="cardname" class="paymentinput" name="cardname"
-                            placeholder="John Doe"><br>
+                <div class="card_container">
+                    <h3>Payment</h3>
+                    <label for="cardname">Full Name on Card</label><br>
+                    <input type="text" id="cardname" class="paymentinput" name="cardname" placeholder="John Doe"><br>
 
-                        <label for="cardnumber">Card Number</label><br>
-                        <input type="text" id="cardnumber" class="paymentinput" name="cardnumber"
-                            placeholder="000 000 000 000"><br>
+                    <label for="cardnumber">Card Number</label><br>
+                    <input type="text" id="cardnumber" class="paymentinput" name="cardnumber"
+                        placeholder="000 000 000 000"><br>
 
-                        <label for="expmonth">Expiry Month</label><br>
-                        <input type="text" id="expdate" class="paymentinput" name="expdate" placeholder="XXXuary"><br>
+                    <label for="expmonth">Expiry Month</label><br>
+                    <input type="text" id="expdate" class="paymentinput" name="expdate" placeholder="XXXuary"><br>
 
-                        <label for="expyear">Expiry Year</label><br>
-                        <input type="text" id="expyear" class="paymentinput" name="expyear" placeholder="20XX"><br>
+                    <label for="expyear">Expiry Year</label><br>
+                    <input type="text" id="expyear" class="paymentinput" name="expyear" placeholder="20XX"><br>
 
-                        <label for="cvv">CVV</label><br>
-                        <input type="text" id="cvv" class="paymentinput" name="cvv" placeholder="000"><br>
-                    </div>
-
+                    <label for="cvv">CVV</label><br>
+                    <input type="text" id="cvv" class="paymentinput" name="cvv" placeholder="000"><br>
                     <button type="submit" value="Submit" class="submitbutton">Submit</button>
-                </form>
+                </div>
             </div>
         </section>
         <!-- End of Payment -->
+
+        <!-- // COMBINED ELEMENTS SECTION -->
 
 
         <!-- // COMPANY BREAKDOWN SECTION -->
 
         <section class="element" id="copmany_breakdown">
-            <h2>Company Branding Ideas</h2>
-            <h3>What does my company do?</h3>
-            <p>My company supplies digital illustration products, tools, and accessories online.</p>
+            <h2>Company Branding Ideals</h2>
+            <h3>What is our purpose?</h3>
+            <p>ArtXTech houses a rental service for different digital illustration products, virtual reality gear
+                online.</p>
 
-            <h3>Who is my company to potential customers?</h3>
-            <p>My company appeals for people needing new tools or products because theirs is worn down or lost, or for
-                people getting into this new hobby and wanting the right tools for the job.</p>
+            <h3>Who are we to potential customers?</h3>
+            <p>We appeal to the audience that want to try out some more expensive tech products but don't necessarily
+                have the money to
+                buy the product for their own.
+            </p>
 
-            <h3>Why might this company entice someone to purchase a product or service?</h3>
+            <h3>Why might customers purchase a service from us?</h3>
             <p>My company offers a wide variety of products in one location in a quick and efficient way without needing
                 to search all over. Getting products to their front door is fast and quick.</p>
 
@@ -473,21 +234,45 @@
             <li>Matteson, Steve. Designer. 2012. <strong>Cousine[Font]</strong>. Retrieved from <a
                     href="https://fonts.google.com/specimen/Cousine/about?query=cousine">https://fonts.google.com/specimen/Cousine/about?query=cousine</a>
             </li>
-            <li>R POST.Co . Publisher. 2024.   <strong>Visually edited image of a VR artist [photography].ARPOST.co</strong>Retrieved from <a
-                href="https://arpost.co/2022/01/03/the-best-vr-art-creation-tools-you-can-try/">https://arpost.co/2022/01/03/the-best-vr-art-creation-tools-you-can-try/</a>
+            <li>R POST.Co. Publisher. 2024. <strong>Visually edited image of a VR artist
+                    [photography].</strong>Retrieved from <a
+                    href="https://arpost.co/2022/01/03/the-best-vr-art-creation-tools-you-can-try/">https://arpost.co/2022/01/03/the-best-vr-art-creation-tools-you-can-try/</a>
             </li>
-            <li>Getty Images. Publisher. 2024.  <strong>Apple Vision Pro [Photograph]</strong>Retrieved from <a
-                href="https://www.billboard.com/culture/product-recommendations/apple-vision-pro-where-to-buy-1235584681/">www.billboard.com/culture/product-recommendations/apple-vision-pro-where-to-buy-1235584681/</a>
+            <li>Getty Images. Publisher. 2024. <strong>Apple Vision Pro [Photograph]</strong>Retrieved from <a
+                    href="https://www.billboard.com/culture/product-recommendations/apple-vision-pro-where-to-buy-1235584681/">www.billboard.com/culture/product-recommendations/apple-vision-pro-where-to-buy-1235584681/</a>
             </li>
             <li>HTC Hive. Publisher. 2024. <strong>VIVE Pro 2 Headset. [Photograph].</strong>Retrieved from <a
-                href="https://www.vive.com/ca/product/vive-pro2/overview/">www.vive.com/ca/product/vive-pro2/overview/</a>
+                    href="https://www.vive.com/ca/product/vive-pro2/overview/">www.vive.com/ca/product/vive-pro2/overview/</a>
             </li>
             </ul>
-
-            
-
         </section>
 
+        <footer class="contactus_container">
+            <div class="company">
+                <h3>ArtXTech</h3>
+                <p>Telephone: 778-475-3345</p>
+                <p>Email: artXtech@email.com</p>
+                <p>Location: ParkNorth 753 Drive, Vancouver, Canada</p>
+            </div>
+
+            <div class="review">
+                <h3>Contact Us</h3>
+
+                <label for="contact_input">Let us know how we are doing!</label> <br>
+                <textarea id="contact_input" name="contact_input" rows="3" cols="40"></textarea>
+                <input class="contacts_name" tabindex="1" placeholder="Name">
+                <input class="contacts_email" tabindex="2" placeholder="Email">
+                <button type="submit" value="Submit" class="contact_submit">Submit</button>
+            </div>
+
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter!</h3>
+                <label for="newsletter_input"></label>
+                <input type="text" class="contactus_newsletter_input" id="newsletter_input" name="newsletter_input"
+                    placeholder="Email">
+                <button type="submit" value="Submit" class="footersubmit">Subscribe</button>
+            </div>
+        </footer>
 </body>
 
 </html>

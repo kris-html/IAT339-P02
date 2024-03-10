@@ -205,8 +205,12 @@ section{
     justify-content: center;
     text-align: center;
     margin: 1em 1em;
-
 }
+
+.archive_title{
+    text-decoration: underline;
+}
+
 .product{
     position: relative;
     position: center;
@@ -387,6 +391,7 @@ section{
 
     .aboutus{
         margin: 0em 0em;
+        margin-bottom: 5rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -397,9 +402,8 @@ section{
         }
         img{
             text-align: center;
-            
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
         }
         
     }
