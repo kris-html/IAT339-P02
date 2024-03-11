@@ -50,16 +50,23 @@
 
         <div class="product_renting">
             <h2>Rent Now</h2>
-            <p>50$/day</p>
-            <label for="quantity">Number of Devices (Max 10):</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" />
+            <h3>50$/day</h3>
+            <div class="user_input">
+                <label for="quantity">Number of Devices (Max 10):</label>
+                <input class="user_input" type="number" id="quantity" name="quantity" min="1" max="10" />
+            </div>
 
-            <label for="start">Start Date:</label>
-            <input type="date" id="start" name="start" min="2024-01" value="2024-01" />
+            <div class="user_input">
+                <label for="start">Start Date:</label>
+                <input type="date" id="start" name="start" min="2024-01" value="2024-01" />
+            </div>
 
-            <label for="end">End Date:</label>
-            <input type="date" id="end" name="end" min="2024-01" value="2024-01" />
 
+            <div class="user_input">
+                <label for="end">End Date:</label>
+                <input type="date" id="end" name="end" min="2024-01" value="2024-01" />
+            </div>
+            
             <a href="checkout.html">
                 <button type="submit" value="Submit" class="submitbutton">Add To Cart</button>
             </a>

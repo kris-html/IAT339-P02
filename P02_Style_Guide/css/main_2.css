@@ -268,7 +268,10 @@ section{
     text-align: center;
   }
 
-  
+ .user_input{
+    margin:1em;
+ }
+
   .product_description{
     max-width: max-content;
   }
