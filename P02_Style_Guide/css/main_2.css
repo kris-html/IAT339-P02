@@ -43,7 +43,9 @@ button{
         color: var(--text-color);
         background-color: var(--bg-color)
     }
+
 }
+
 
 div{
     margin:1em 1em;
@@ -423,7 +425,7 @@ textarea{
   /* Color style guidesection */
 
   :root {
-    --primary-color: #4375D2;
+    --primary-color: #d3e2ff;
     --button-color: #2b5ebc;
     --button-color-selected: #f3f8fa;
     --button-color-selected_lightbg: #010812;
