@@ -14,6 +14,11 @@ body{
     padding-right: 0.1rem;
     padding-left: 0.1rem;
     border: none;
+
+    &:hover{
+        background-color: rgb(209, 208, 208);
+        transition-duration: 0.2s;
+    }
 }
 
 textarea{
@@ -157,7 +162,6 @@ header{
 
 h1{
     font-size: 3rem;
-    /* margin: 1em 1em; */
     line-height: 3.3rem;
 }
 
@@ -242,6 +246,17 @@ section{
     }
   }
   
+.product_details{
+    h2{
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
   .product_description, .product_price, .product_name{
     text-align: left;
   }
@@ -285,31 +300,34 @@ section{
   /* Checkout Cart Styling */
 .checkout_cart_container{
     display: flex;
-    margin:auto;
-    padding: 3rem;
-    max-width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2em 3em 2em;
     text-align: left;
     background-color: var(--bg-color);
     color: rgb(241, 241, 241);
   }
-  
+
   .checkout_total{
     text-align: right;
+    justify-content: right;
   }
+
   .checkout_image{
     text-align: left;
   }
 
   /* Billing Styling */
+.payment{
+    justify-content: center;
+}
+
 .payment_container{
     display: flex;
     justify-content: center;
-  
-    margin:auto;
-    padding: 1rem;
     /* max-width: 400px; */
     text-align: left;
-    background-color: #474747;
+    background-color: #4375D2;
     color: rgb(241, 241, 241);
   }
   
@@ -325,9 +343,9 @@ section{
   
   .paymentinput{
     padding: 0.5rem;
-    margin-bottom: 1rem;
     border: 1px solid rgb(112, 112, 112);
     border-radius: 5px;
+    
   }
   
   .paymentinput:hover, .paymentinput:focus{
@@ -341,22 +359,11 @@ section{
     border: 1px solid white;
   }
 
-  /* .submitbutton{
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 0.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color:var(--button-color);
-    transition-duration: 0.2s;
-    border: 1px var(--button-color);
-    color: var(--text-color);
-  } */
-  
-  /* .submitbutton:hover{
-    background-color:var(--button-color-selected);
-  } */
+  .confirm_button{
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
   /* End of Billing Styling */
 
   /* Color style guidesection */
@@ -364,7 +371,7 @@ section{
   :root {
     --primary-color: #4375D2;
     --button-color: #2b5ebc;
-    --button-color-selected: #F1FCFF;
+    --button-color-selected: #f3f8fa;
     --button-color-selected_lightbg: #010812;
     --bg-color: #010812;
     --footer-color: #4375D2;
