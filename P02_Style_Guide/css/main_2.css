@@ -6,47 +6,62 @@ body{
 }
 
 /* margins with em and fonts with rem */
-
-.contacts_name, .contacts_email, .contactus_newsletter_input{
-    border-radius: 5px;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-right: 0.1rem;
-    padding-left: 0.1rem;
-    border: none;
-
-    &:hover{
-        background-color: rgb(209, 208, 208);
-        transition-duration: 0.2s;
-    }
-}
-
-textarea{
-    max-width: 21.5rem;
-    max-height: 5rem;
-    min-width: 18rem;
-    min-height: 3rem;
-}
-
-.contacts_message{
-    border-radius: 5px;
-    padding: 0.2rem;
-    padding-left: 1.5rem;
-    padding-right: 10.2rem;
-    border: none;
-    margin-top: 1rem;
-}
-
-.contact_submit{
-    border: 1px solid white;
-    margin-top: 1rem;
-    width: 22rem;
-}
+/* general elements css */
 
 a{
     text-decoration: none;
     font-size: 1.3rem; 
 }
+
+
+h1{
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+h2{
+    font-size: 2em;
+    margin: 2em 1em;
+    margin-bottom: 1em;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+p{
+    margin: 1em 1em;
+}
+
+button{
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color:var(--primary-color);
+    border: #8ED2FF;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    &:hover{
+        color: var(--text-color);
+        background-color: var(--bg-color)
+    }
+}
+
+div{
+    margin:1em 1em;
+}
+
+
+section{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 1em;
+}
+
+.archive_title{
+    text-decoration: underline;
+}
+
+/* navigation css */
 
 nav{
     position: fixed;
@@ -87,39 +102,9 @@ nav{
 
 }
 
-.aboutus{
-    margin: 0em 0em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
 
-    p{
-        text-align: center;
-    }
-    img{
-        text-align: center;
-        
-        width: 100%;
-        height: 100%;
-    }
-    
-}
+/* banner and about us, view all css */
 
-.review{
-    max-width: 25rem;
-}
-
-.contactus_container{
-    margin: 0em;
-    margin-top: 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    background-color: var(--footer-color);
-    flex-wrap: wrap;
-}
 
 .banner{
     padding: 5em 5em;
@@ -160,39 +145,25 @@ header{
     }
 }
 
-h1{
-    font-size: 3rem;
-    line-height: 3.3rem;
-}
+.aboutus{
+    margin: 0em 0em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 
-h2{
-    font-size: 2em;
-    margin: 2em 1em;
-    margin-bottom: 1em;
-    line-height: 2.2rem;
-    text-align: center;
-}
-
-p{
-    margin: 1em 1em;
-}
-
-button{
-    display: inline-block;
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color:var(--primary-color);
-    border: #8ED2FF;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    &:hover{
-        color: var(--text-color);
-        background-color: var(--bg-color)
+    p{
+        text-align: center;
     }
-}
-
-div{
-    margin:1em 1em;
+    img{
+        text-align: center;
+        
+        width: 100%;
+        height: 100%;
+    }
+    .infographic{
+        padding-inline-end: 10%;
+    }
 }
 
 section.landingpage-banner{
@@ -204,16 +175,96 @@ section.landingpage-banner{
     }
 }
 
-section{
-    position: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 1em 1em;
+.viewall{
+
+    h2{
+        color: var(--button-color-selected);
+    }
+    padding: 2em 2em;
+    margin: 0em 0em;
+    background-image: url(../images/other_tablets.jpg);
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 10%;
+    max-width:100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
 }
 
-.archive_title{
-    text-decoration: underline;
+/* contact forms css */
+
+.review{
+    max-width: 25rem;
 }
+
+.contacts_name, .contacts_email, .contactus_newsletter_input{
+    border-radius: 5px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    border: none;
+
+    &:hover{
+        background-color: rgb(209, 208, 208);
+        transition-duration: 0.2s;
+    }
+}
+
+
+textarea{
+    max-width: 21.5rem;
+    max-height: 5rem;
+    min-width: 18rem;
+    min-height: 3rem;
+}
+
+.contacts_message{
+    border-radius: 5px;
+    padding: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 10.2rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.contact_submit{
+    border: 1px solid white;
+    margin-top: 1rem;
+    width: 22rem;
+}
+
+
+.contactus_container{
+    margin: 0em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    background-color: var(--footer-color);
+    flex-wrap: wrap;
+}
+
+.viewall{
+
+    h2{
+        color: var(--button-color-selected);
+    }
+    padding: 2em 2em;
+    margin: 0em 0em;
+    background-image: url(../images/other_tablets.jpg);
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 10%;
+    max-width:100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+/* Product related css */
 
 .product{
     position: relative;
@@ -232,7 +283,7 @@ section{
     }
 }
 
-/* Product Listing Styling */
+/* Product Listing specific Styling */
 .product_listings{
 
     display: flex;
@@ -381,13 +432,10 @@ section{
     --text-color: #F1FCFF;
 }
 
-/* responsive stuff */
+/* responsive elements and style */
 
-@media only screen and (min-width:430px){
-    .banner{
-        margin-bottom: 3em;
-    }
-}
+/* mobile design responses */
+
 @media only screen and (min-width:430px){
     .banner{
         margin-bottom: 8em;
@@ -418,6 +466,9 @@ section{
         
     }
 }
+
+/* tablet design responsive */
+
 @media only screen and (min-width: 824px) {
 
     .menu_icon{
@@ -473,6 +524,8 @@ section{
     
 }
 
+/* desktop 1200px */
+
 @media only screen and (min-width: 1200px) {
 
     .menu-icon{
@@ -506,6 +559,7 @@ section{
         }
 
     }
-    
+
+
 }
 
