@@ -32,7 +32,7 @@
 
     <section class="element">
         <div class="product_huion_image">
-            <img src="../images/huion tablet.png" width="50%" alt="Apple Vision Pro on display" />
+            <img src="../images/huion_tablet.png" alt="Apple Vision Pro on display" />
         </div>
 
         <div class="product_apple_desc">
@@ -60,17 +60,17 @@
 
             <div class="user_input">
                 <label for="start">Start Date:</label>
-                <input type="date" id="start" name="start" min="2024-01" value="2024-01" />
+                <input type="date" id="start" name="start" min="2024-03-01" value="2024-03-05" />
             </div>
 
             <div class="user_input">
                 <label for="end">End Date:</label>
-                <input type="date" id="end" name="end" min="2024-01" value="2024-01" />
+                <input type="date" id="end" name="end" min="2024-03-01" value="2024-03-05" />
             </div>
-
-            <a href="checkout.html">
-                <button type="submit" value="Submit" class="submitbutton">Add To Cart</button>
-            </a>
+            
+            <button type="submit" value="Submit" class="submitbutton" onclick="window.location.href='checkout.html';">
+                Add To Cart
+              </button>
         </div>
 
     </section>
