@@ -14,42 +14,44 @@
 <body>
   <header>
     <a href="../main.html"><img src="../images/logo.png" alt="logo_black"></a>
-    
+
     <nav>
       <ul>
-        <li><a href="product_listing.html">Products</a></li>
-        <li><a href="archive.html">Archive</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
+        <li><a class ="nav-link" href="aboutus.html">About Us</a></li>
+        <li><a class ="nav-link" href="product_listing.html">Products</a></li>
+        <li><a class ="nav-link" href="checkout.html">Checkout</a></li>
       </ul>
     </nav>
   </header>
 
-    <section class="banner">
-    <h1> Policies</h1>
-    <p>Our mission is to give artists the freedom to try high-end creative technologies before making a
-        decision on making a big purchase. Unfortenly we know accidents happen, but as a small busness, we do need accounability from the customor to report loses or damanges up on returning a object. 
+  <section class="banner">
+    <h1 class="subheading">Our Policies</h1>
+    <!-- //<div> <img src="./images/bg.png" alt=""></div> -->
+    <!-- Citation: AR POST.Co . (2024). Visually edited image of a VR artist [photography].ARPOST.co 
+      https://arpost.co/2022/01/03/the-best-vr-art-creation-tools-you-can-try/ -->
+  </section>
+
+  <section class="policies_extra">
+    <div>
+      <h2> Lost or Damaged Item? </h2>
+      <p>Need to report an issue with our product or file a lost item? Call our customer service at:
+        <strong>562-247-3473</strong> </p>
+    </div>
+    
+    <div>
+      <h2> Delay Return</h2>
+      <p> For each day missed returning <strong>ALL</strong> product items, an extra 20% of the orginal rental cost will
+        be requested . </p>
+    </div>
+  </section>
+
+  <section class="policies_about">
+    <p>Our mission is to give users the freedom to try high-end creative technology before making a
+      decision on making a big purchase. Unfortunately we know accidents happen, but looking after our customers we need
+      accountability from the customer to report losses or damages on returning an object.
     </p>
 
-    </section>
-    <section>  
-        <h2> Lost item? </h2>
-        <p>>Need to report an issue or lost item? Call 562-247-3473 
-        </p>
-        <h2> Delay return</h2>
-        <p> The delay in 1 day in charge in 20% of the orginal rental total cost. 
-        </p>
-    </section>
-
-    <div class="Reporting">
-        <h3>Contact Us</h3>
-        
-        <label for="contact_input">Need to report an issue or lost item? Call 562-247-3473</label> <br>
-        <textarea id="contact_input" name="contact_input" rows="3" cols="45"></textarea>
-        <input class="contacts_name" tabindex="1" placeholder="Name">
-        <input class="contacts_email" tabindex="2" placeholder="Email">
-        <button type="submit" value="Submit" class="contact_submit">Submit</button>
-      </div>
-  </div>
+  </section>
 
   <footer class="contactus_container">
     <div class="company">
@@ -61,11 +63,13 @@
 
     <div class="newsletter">
       <h3>Subscribe to Our Newsletter!</h3>
-      <label for="newsletter_input"></label> 
-      <input type="text" class="contactus_newsletter_input" id="newsletter_input" name="newsletter_input" placeholder="Email">
+      <label for="newsletter_input"></label>
+      <input type="text" class="contactus_newsletter_input" id="newsletter_input" name="newsletter_input"
+        placeholder="Email">
       <button type="submit" value="Submit" class="footersubmit">Subscribe</button>
     </div>
   </footer>
 
-  </body>
-  </html>
+</body>
+
+</html>

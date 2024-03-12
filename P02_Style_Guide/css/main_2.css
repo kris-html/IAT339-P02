@@ -33,7 +33,7 @@ p{
 
 button{
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.5em;
     border-radius: 5px;
     background-color:var(--primary-color);
     border: #8ED2FF;
@@ -46,11 +46,9 @@ button{
 
 }
 
-
 div{
     margin:1em 1em;
 }
-
 
 section{
     position: flex;
@@ -101,12 +99,9 @@ nav{
         
     } 
 
-
 }
 
-
 /* banner and about us, view all css */
-
 
 .banner{
     padding: 5em 5em;
@@ -116,24 +111,18 @@ nav{
         position: absolute;
         top: 0;
         left: 0;
-        
-        /* background-size: cover; */
+
         background-position-x: 0;
         background-position-y: 10%;
         width: 100%;
         height: 100%;
         z-index: -1;
         background-repeat: no-repeat;
-        /* the image is in the background hence -1 */
     }
 
     p{
         margin:0em ,1em;
     }
-}
-
-.logo{
-/* potentially adding text later, rn it's png?\ */
 }
 
 header{
@@ -194,8 +183,20 @@ section.landingpage-banner{
     z-index: -1;
     background-repeat: no-repeat;
 }
-
 /* contact forms css */
+
+/* About Us CSS start */
+.aboutus_content{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    p{
+        max-width:40%;
+        margin-top:4em;
+    }
+}
+/* About Us CSS End */
 
 /* foooter section start */
 .review{
@@ -333,8 +334,8 @@ textarea{
 
   .applevisionpro, .huiontablet, .metaquest3, .wacomtablet{
     padding: 2rem;
-    max-width: 22rem;
-    max-height: 30rem;
+    max-width: 22em;
+    max-height: 25em;
     text-align: center;
   }
 
@@ -427,6 +428,24 @@ textarea{
   }
 
     /* End of Billing Styling */
+
+    /* Policies CSS Start */
+.policies_extra{
+    display: flex;
+    flex-direction: row;
+}
+
+.policies_about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+
+    p{
+        max-width: 60%;
+    }
+}
+    /* Policies CSS End */
 
   /* Color style guidesection */
 
