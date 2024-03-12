@@ -259,19 +259,25 @@ textarea{
     flex-wrap: wrap;
 }
 
-.footersubmit{
-    margin: 1rem;
-    width: 7rem;
+
+
+  footer{
+    .footersubmit{
+        margin: 1rem;
+        width: 7rem;
+      }
+    
+      .confirm_button{
+        text-align: center;
+        margin-bottom: 10rem;
+      }
+    .nav-link{
+        list-style-type:none;
+        display: inline-block;
+        text-align: center;
+      }
   }
 
-  .confirm_button{
-    text-align: center;
-    margin-bottom: 10rem;
-  }
-
-  .nav-link{
-    list-style-type:none
-  }
 
 /* foooter section end */
 
